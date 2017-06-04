@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/material_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/white"
+            app:mtf_backgroundColor="@color/colorPrimary"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/ic_person_white_24dp"
+            app:mtf_labelColor="@color/colorPrimary"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/sex"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_gentleman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/gentleman" />
+
+            <RadioButton
+                android:id="@+id/radio_button_lady"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lady" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_5"
+                android:text="@string/age"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_view_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:text="100" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seek_bar_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/seek_bar_age_attr"
+            android:thumb="@drawable/seek_bar_age_thumb"
+            tools:progress="50" />
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/material_text_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/white"
+            android:focusable="true"
+            app:mtf_backgroundColor="@color/colorPrimary"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/ic_assignment_white_24dp"
+            app:mtf_labelColor="@color/colorPrimary"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/edit_text_student_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:hint="@string/student_id"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/material_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/white"
+            app:mtf_backgroundColor="@color/colorPrimary"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/ic_email_white_24dp"
+            app:mtf_labelColor="@color/colorPrimary"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/material_text_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/white"
+            app:mtf_backgroundColor="@color/colorPrimary"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/ic_phone_white_24dp"
+            app:mtf_labelColor="@color/colorPrimary"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <EditText
+                android:id="@+id/edit_text_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:hint="@string/tel"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/introduction"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_text_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="@color/colorPrimary"
+            android:hint="@string/hint_introduction"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_20"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_exit"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_cancel_attr"
+                android:onClick="controlButtonClick"
+                android:text="@string/exit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button_save"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_default_attr"
+                android:onClick="controlButtonClick"
+                android:text="@string/okay"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

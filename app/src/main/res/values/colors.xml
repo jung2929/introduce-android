@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="green">#FF99CC00</color>
+    <color name="red">#FFFF4444</color>
+
+    <!-- 버튼 색 -->
+    <color name="buttonReleasedDefault">#4682B4</color>
+    <color name="buttonPressedDefault">#4999E9</color>
+
+    <color name="buttonReleasedConfirm">#FF99CC00</color>
+    <color name="buttonPressedConfirm">#FF99BB00</color>
+
+    <color name="buttonReleasedCancel">#FFFF4444</color>
+    <color name="buttonPressedCancel">#FFFF5555</color>
+</resources>

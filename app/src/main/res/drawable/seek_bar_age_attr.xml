@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="line">
+            <stroke
+                android:width="4dp"
+                android:color="#c0c0c0" />
+        </shape>
+    </item>
+
+    <!-- 시크바 프로그래스 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="line">
+                <stroke
+                    android:width="4dp"
+                    android:color="@color/colorAccent" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

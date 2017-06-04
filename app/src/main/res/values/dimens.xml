@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="height_300">300dp</dimen>
+    <dimen name="height_200">200dp</dimen>
+    <dimen name="image_view_160">160dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+</resources>
